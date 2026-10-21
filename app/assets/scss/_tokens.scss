@@ -1,0 +1,89 @@
+// CSS custom properties — Hammersmith brendi (steak-house va pab).
+//
+// Palitra logotip va Instagram suratlaridan: oltin «HS» monogramma, to'q bordo va
+// ko'mir-qora fon, iliq yog'och. Sahifa foni — iliq krem; bordo — FAQAT urg'ularda
+// (tugma, narx, ikonka); to'q panellar (filiallar, footer, hero) — ko'mir-bordo, ularda urg'u — oltin.
+@use 'variables' as *;
+@use 'mixins' as *;
+
+:root {
+  color-scheme: light;
+
+  --page-gradient: linear-gradient(180deg, #FBF7F2 0%, #F6EFE6 48%, #EDE1D3 100%);
+  --bg: #F8F3EC;
+  --bg-rgb: 248 243 236;
+  // ikkinchi och rang (iliq qum) — bannerlar, joy ushlagich
+  --tint: #F3E9DD;
+  --surface: #ffffff;
+  --surface-soft: #F5EEE5;
+  --border: #E9DFD2;
+  --border-strong: #D9C8B4;
+
+  --text: #1C1512;
+  --text-secondary: #5E524A;
+  --text-muted: #8E8177;
+
+  // Logotip fonidagi bordo (tugma gradienti — --accent-gradient)
+  --accent: #9E1B1F;
+  --accent-hover: #821417;
+  --accent-gradient: linear-gradient(90deg, #B8262A 0%, #8E1519 100%);
+  --accent-gradient-hover: linear-gradient(90deg, #A82024 0%, #7A1013 100%);
+  // sarlavhadagi kursiv urg'u — logotipdagi oltinning to'q ottenkasi (och fonda o'qiladi)
+  --accent-italic: #8F6420;
+  --accent-soft: #F6E6E2;
+  --accent-contrast: #ffffff;
+  // to'q fonlarda urg'u rangi — logotip oltini; to'q panellar (filiallar, footer); soya va porlash
+  --accent-on-dark: #E2BE76;
+  --deep-1: #2A1414;
+  --deep-2: #120B0A;
+  --deep-rgb: 18 11 10;
+  --glow-rgb: 176 38 42;
+  --shade-rgb: 60 25 20;
+
+  --danger: #D93A57;
+  --success: #1F9D6B;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-sm: 0 1px 2px rgba(30, 26, 51, 0.04);
+  --shadow-md: 0 8px 24px rgb(var(--shade-rgb) / 0.06);
+
+  --font-sans: 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+  --text-xs: 13px;
+  --text-sm: 15px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 36px;
+  --text-3xl: 42px;
+  --text-hero: 56px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  --t-fast: 0.18s ease;
+  // Harakat: sokin, sakrashsiz — «shablon» effektlardan qochish uchun kichik masofa va qisqa vaqt
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-hover: 0.28s var(--ease-out);
+  --shadow-hover: 0 12px 28px rgb(var(--shade-rgb) / 0.09);
+
+  @include down($bp-md) {
+    --text-2xl: 27px;
+    --text-3xl: 30px;
+    --text-hero: 38px;
+  }
+}

@@ -1,0 +1,50 @@
+// Qayta ishlatiladigan mixinlar (CSS chiqishi yo'q).
+@use 'variables' as *;
+
+@mixin up($w) {
+  @media (min-width: $w) { @content; }
+}
+
+@mixin down($w) {
+  @media (max-width: ($w - 1px)) { @content; }
+}
+
+@mixin container($max: $container) {
+  width: 100%;
+  max-width: $max;
+  margin-inline: auto;
+  padding-inline: 32px;
+
+  @include down($bp-lg) {
+    padding-inline: 24px;
+  }
+
+  @include down($bp-sm) {
+    padding-inline: 16px;
+  }
+}
+
+@mixin focus-ring {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+// Oq karta: ingichka chegara, nursiz — dizayndagi «yaltiroq» kartalar o'rniga
+// Hover'da 3px ko'tariladi va soyasi biroz kuchayadi (faqat sichqonchali qurilmalarda)
+@mixin card-hover {
+  transition: transform var(--t-hover), box-shadow var(--t-hover), border-color var(--t-hover);
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-strong);
+    }
+  }
+}
+
+@mixin card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}

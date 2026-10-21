@@ -1,0 +1,235 @@
+// O'zbekcha (lotin). Kalitlar ru.js bilan bir xil.
+export default {
+  langLabel: "O'zbekcha",
+  langShort: 'UZ',
+  seoTitle: 'Hammersmith — Toshkentda steyklar, pivo va atmosfera',
+
+  eyebrow: {
+    why: 'Hammersmith',
+    about: 'Biz haqimizda',
+    studios: 'Filiallar',
+    menu: 'Menyu',
+    form: 'Bron',
+  },
+
+  gallery: {
+    open: "Suratlarni ko'rish",
+    close: 'Yopish',
+    back: 'Barcha suratlarga',
+    prev: 'Oldingi surat',
+    next: 'Keyingi surat',
+    hint: "Suratni to'liq ochish uchun ustiga bosing",
+  },
+
+  header: {
+    navLabel: 'Asosiy menyu',
+    cta: 'Stol band qilish',
+    openMenu: 'Menyuni ochish',
+    closeMenu: 'Menyuni yopish',
+    menu: 'Menyu',
+    langLabel: 'Til',
+    toTop: 'Yuqoriga',
+  },
+
+  nav: {
+    menu: 'Menyu',
+    branches: 'Filiallar',
+    about: 'Biz haqimizda',
+    contacts: 'Kontaktlar',
+  },
+
+  hero: {
+    title: 'Steyklar, pivo',
+    titleAccent: 'va atmosfera',
+    text: "Grilda pishgan steyklar, quyma pivo va unga gazaklar — Toshkentdagi beshta Hammersmith restoranida. Har kuni 15:00 dan 01:00 gacha.",
+    badge: 'Hammersmith · Steak & Beer',
+    cta: "Menyuni ko'rish",
+    proofTitle: 'Toshkentda 5 ta restoran',
+    proofText: "Novza, O'rda, Minor, Uzbum va Parkent — eng yaqinini tanlang va stol band qiling.",
+    place: 'Toshkent · 5 filial · 15:00 – 01:00',
+  },
+
+  alt: {
+    hero: 'Ochiq olovdagi steyklar',
+    heroGrill: "Gril panjarasidagi go'sht",
+    heroFire: 'Gril olovi',
+    slide: 'Slayd',
+  },
+
+  why: {
+    title: 'Bizga nima',
+    titleAccent: 'uchun kelishadi',
+    items: [
+      { title: 'Grildagi steyklar', text: "Tomagavk, ribay, tibon, nyu-york, denver, machete va boshqalar — menyuda o'n xil steyk." },
+      { title: 'Pivo va gazaklar', text: "Filtrlangan va filtrlanmagan, to'q va bug'doyli pivo, pivo uchun setlar va dudlangan baliq." },
+      { title: 'Tungi soat birgacha', text: "Har kuni 15:00 dan 01:00 gacha ochiq — kechki ovqat, do'stlar bilan uchrashuv yoki kech oqshom uchun." },
+      { title: 'Beshta manzil', text: "Novza, O'rda, Minor, Uzbum va Parkent — Toshkentning turli hududlarida." },
+    ],
+  },
+
+  about: {
+    photos: ['Pivo seti', 'Tomagavk steyki', 'Oshpazdan grill-assorti'],
+    title: 'Steyklar, pivo',
+    titleAccent: 'va atmosfera',
+    paragraphs: [
+      "Hammersmith — Toshkentdagi restoran-barlar tarmog'i. Menyuning markazida — grildagi go'sht: mol go'shtidan steyklar, cho'chqa qovurg'alari, «Meat Hunt» BBQ setlari va katta davra uchun grill-assorti.",
+      "Go'shtga — quyma va shishadagi pivo, pivo uchun gazaklar, dudlangan baliq, HS salatlari va kokteyllar. Besh filial har kuni 15:00 dan 01:00 gacha ishlaydi.",
+    ],
+  },
+
+  trust: [
+    { value: '5', label: 'restoran Toshkentda' },
+    { value: '10', label: 'xil steyk menyuda' },
+    { value: '20', label: 'pozitsiya pivo' },
+    { value: '15–01', label: 'har kuni ishlaymiz' },
+  ],
+
+  studios: {
+    title: 'Beshta restoran',
+    titleAccent: 'Toshkentda',
+    text: 'Har bir filialda bitta menyu va bitta xarakter. Manzilni bosing — xarita ochiladi.',
+    photo: 'Surat',
+    hours: 'Har kuni',
+    call: "Qo'ng'iroq",
+    route: "Yo'nalish",
+    photoSoon: 'Filial surati tez orada',
+    branches: {
+      novza: { name: 'Novza', address: "Muqimiy ko'chasi, 21" },
+      orda: { name: "O'rda", address: "Shayxontohur ko'chasi, 29" },
+      minor: { name: 'Minor', address: "Amir Temur shoh ko'chasi, 62" },
+      uzbum: { name: 'Uzbum', address: "Farg'ona yo'li, 44" },
+      parkent: { name: 'Parkent', address: "Sultonali Mashhadiy ko'chasi, 52" },
+    },
+  },
+
+  statement: "Ochiq olovdagi go'sht, sovuq pivo va do'stlar bilan uzoq oqshom — Hammersmith har kuni tungi soat birgacha ishlaydi.",
+
+  featured: {
+    title: 'Menyumizdan',
+    titleAccent: 'tanlovlar',
+    text: 'Narxlar va mavjudlik — restoranning amaldagi menyusidan.',
+    all: "Butun menyu",
+  },
+
+  menu: {
+    seo: 'Menyu — Hammersmith',
+    seoText: "Hammersmith restoranlari menyusi: steyklar, BBQ, pivo uchun gazaklar, salatlar, pivo va kokteyllar narxlari bilan.",
+    eyebrow: 'Menyu',
+    title: 'Menyu',
+    accent: 'Hammersmith',
+    text: "Beshala filialda bitta menyu. Narxlar so'mda.",
+    groups: { grill: 'Gril va BBQ', kitchen: 'Oshxona', bar: 'Bar', drinks: 'Ichimliklar', coffee: 'Qahva' },
+    search: 'Taom qidirish',
+    empty: 'Hech narsa topilmadi',
+    sum: "so'm",
+    from: 'dan',
+    minutes: 'daq',
+    composition: 'Tarkibi',
+    error: "Menyu hozir yuklanmadi. Sahifani yangilab ko'ring yoki bizga qo'ng'iroq qiling.",
+    retry: 'Yangilash',
+    loading: 'Menyu yuklanmoqda…',
+    noPhoto: 'Suratsiz',
+    categories: "Menyu bo'limlari",
+    adult: 'Spirtli ichimliklar 18 yoshdan katta shaxslarga sotiladi.',
+  },
+
+  cta: {
+    lead: "Ariza qoldiring — administrator qo'ng'iroq qilib, tanlangan filialda bronni tasdiqlaydi.",
+    title: 'Stol',
+    titleAccent: 'band qiling',
+    button: 'Stol band qilish',
+  },
+
+  form: {
+    title: 'Stol',
+    titleAccent: 'bron qilish',
+    text: "Kontakt, filial va vaqtni qoldiring — bronni tasdiqlash uchun qo'ng'iroq qilamiz.",
+    name: 'Ism',
+    phone: 'Telefon',
+    studio: 'Filial',
+    date: 'Sana',
+    time: 'Vaqt',
+    guests: 'Mehmonlar',
+    comment: 'Bron bo\'yicha istaklar',
+    consentBefore: 'Men',
+    consentLink: 'oferta shartnomasi',
+    consentMid: 'va',
+    consentPolicy: "shaxsga doir ma'lumotlarni qayta ishlash",
+    consentAfter: 'bilan roziman',
+    submit: 'Ariza yuborish',
+    success: "Rahmat! Bronni tasdiqlash uchun tez orada qo'ng'iroq qilamiz.",
+    errors: {
+      name: 'Ismingizni kiriting',
+      phone: "Telefon raqamini to'liq kiriting",
+      studio: 'Filialni tanlang',
+      date: 'Sanani kiriting',
+      time: 'Vaqtni 15:00 dan 01:00 gacha kiriting',
+      consent: "Ma'lumotlarni qayta ishlashga rozilik kerak",
+    },
+  },
+
+  pages: {
+    home: 'Bosh sahifa',
+    about: {
+      seo: 'Biz haqimizda — Hammersmith',
+      eyebrow: 'Biz haqimizda',
+      title: 'Hammersmith',
+      accent: 'Steak & Beer',
+      text: 'Toshkentdagi restoran-barlar: grildagi steyklar, pivo va atmosfera — har kuni 15:00 dan 01:00 gacha.',
+      cta: 'Stol band qilish',
+      valuesEyebrow: 'Menyuda nima bor',
+      valuesTitle: 'Uch narsa,',
+      valuesAccent: 'ular uchun kelishadi',
+      values: [
+        { title: 'Steyklar', text: 'Tomagavk, ribay, porterxaus, tibon, minyon, machete va boshqalar — grilda.' },
+        { title: 'Pivo', text: "Quyma va shishada: och rangli, filtrlanmagan, to'q, bug'doyli va alkogolsiz." },
+        { title: 'Atmosfera', text: "Do'stlar bilan oqshom, katta davra uchun setlar va tungi soat birgacha oshxona." },
+      ],
+      menuEyebrow: 'Menyu',
+      menuTitle: 'Gril, oshxona',
+      menuAccent: 'va bar',
+      menuText: "Gril va BBQ, pivo uchun gazaklar, HS salatlari, sho'rvalar, pasta, baliq, desertlar, bar va kokteyllar.",
+      menuLink: 'Menyuni ochish',
+    },
+    contacts: {
+      seo: 'Kontaktlar — Hammersmith',
+      eyebrow: 'Kontaktlar',
+      title: 'Kontaktlar',
+      accent: 'va filiallar',
+      text: "Qo'ng'iroq qiling, Instagram'da yozing yoki keling — Toshkentdagi beshta restoran har kuni 15:00 dan 01:00 gacha kutadi.",
+      call: 'Telefon',
+      route: 'Xaritada ochish',
+      map: 'Filial xaritasi',
+      cta: "Qo'ng'iroq qilish",
+      quick: [
+        { title: "Qo'ng'iroq qilish", text: "Stol bron qilish va menyu bo'yicha savollar" },
+        { title: 'Instagram', text: 'Yangiliklar, aksiyalar va restoranlar hayoti' },
+        { title: 'Menyu', text: 'Barcha filiallardagi taomlar va narxlar' },
+      ],
+      branchesEyebrow: 'Filiallar',
+      branchesTitle: 'Mehmonga',
+      branchesAccent: 'keling',
+      marquee: ['Novza', "O'rda", 'Minor', 'Uzbum', 'Parkent'],
+    },
+  },
+
+  soon: {
+    text: "Sahifa tez orada tayyor bo'ladi.",
+    home: 'Bosh sahifaga',
+  },
+
+  footer: {
+    contactsTitle: 'Kontaktlar',
+    salesLabel: 'Telefon:',
+    city: 'Toshkent sh.',
+    openMap: 'xaritada ochish',
+    hours: 'Har kuni 15:00 – 01:00',
+    copyright: '© 2026 Hammersmith. Barcha huquqlar himoyalangan.',
+    about: 'Toshkentdagi restoran-barlar: steyklar, pivo va atmosfera.',
+    siteTitle: 'Sayt',
+    branchesTitle: 'Filiallar',
+    madeBy: 'Sayt ishlab chiquvchisi:',
+    offer: 'Oferta shartnomasi',
+    privacy: 'Maxfiylik siyosati',
+  },
+}

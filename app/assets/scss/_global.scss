@@ -1,0 +1,313 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  color: var(--text);
+  // Gradient sahifaning butun bo'yiga cho'ziladi (fixed emas: telefonlarda
+  // fixed fon sakraydi, to'liq sahifa skrinshotida esa ekran balandligida uziladi)
+  background: var(--bg) var(--page-gradient) no-repeat;
+  background-size: 100% 100%;
+  -webkit-font-smoothing: antialiased;
+  // soxta (brauzer qiyshaytirgan) kursiv bo'lmasin — faqat shriftning o'z shakllari
+  font-synthesis: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+// Shrift qalinligi 600 dan oshmaydi: brauzer sarlavha, <b>, <strong>, <th> ni o'zicha 700 qiladi
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}
+
+:focus-visible {
+  @include focus-ring;
+}
+
+// Ikki xil konteyner:
+// .container        — oddiy (1200px), bo'limlar uchun
+// .container--wide  — keng (1680px gacha), header va bosh blok uchun; chetlari bir chiziqda
+// Ulkan sarlavha/lenta siljishlari sahifaga gorizontal scroll qo'shmasin.
+// clip — o'ram ichida haqiqatan kesadi va sticky header'ni buzmaydi
+// (html'ning o'zida clip brauzerda hidden bo'lib qoladi — u surishga yo'l qo'yadi)
+.layout {
+  overflow-x: clip;
+}
+
+.container {
+  @include container;
+
+  &--wide {
+    max-width: $container-wide;
+    padding-inline: var(--wide-pad);
+  }
+}
+
+// keng konteyner chekkasi — bosh blok kartasi ichidagi matn ham shu chiziqqa tekislanadi
+:root {
+  --wide-pad: clamp(24px, 4vw, 64px);
+
+  // o'rta ekranlarda header menyusiga joy qolsin — oddiy konteyner chetlari bilan bir xil
+  @include down($bp-xl) {
+    --wide-pad: 32px;
+  }
+
+  @include down($bp-lg) {
+    --wide-pad: 24px;
+  }
+
+  @include down($bp-sm) {
+    --wide-pad: 16px;
+  }
+}
+
+// Menyu havolasi bilan bo'limga o'tilganda sarlavha sticky header ostida qolmasin
+[id] {
+  scroll-margin-top: 88px;
+}
+
+// Bo'limlar orasidagi bir xil bo'shliq
+.section {
+  padding-block: var(--space-16);
+
+  @include down($bp-md) {
+    padding-block: var(--space-10);
+  }
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+// Sarlavha ustidagi kichik yorliq: bo'limlar boshida bir xil ritm beradi
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+
+  &::before {
+    content: '';
+    width: 22px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent-gradient);
+  }
+}
+
+// Sarlavhadagi urg'u so'z — kursiv, urg'u rangida (--accent-italic)
+.accent-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent-italic);
+}
+
+// ---- Tugmalar: bitta asosiy, bitta ikkinchi darajali ----
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast),
+    transform var(--t-hover), box-shadow var(--t-hover);
+
+  &--primary {
+    background: var(--accent-gradient);
+    color: var(--accent-contrast);
+    box-shadow: 0 8px 20px rgb(var(--glow-rgb) / 0.28);
+
+    &:hover {
+      background: var(--accent-gradient-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgb(var(--glow-rgb) / 0.32);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  &--secondary {
+    background: var(--surface);
+    color: var(--accent);
+    border: 1.5px solid var(--border-strong);
+
+    &:hover {
+      border-color: var(--accent);
+    }
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+// Tugma ichidagi strelka hover'da biroz oldinga suriladi
+.btn svg {
+  transition: transform var(--t-hover);
+}
+
+.btn:hover svg {
+  transform: translateX(3px);
+}
+
+// ---- v-reveal (plugins/reveal.js): ekranga kirganda pastdan paydo bo'lish
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+
+  &.is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Bosh blok: sahifa ochilganda bir marta silliq chiqadi (JS'siz, faqat CSS)
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+.rise-in {
+  animation: rise-in 0.6s var(--ease-out) both;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
+// Loader (SiteLoader.vue) ko'rinib turganda bosh blok animatsiyalari kutib turadi —
+// aks holda ular loader ostida ko'rinmay o'tib ketadi
+// (html — scoped .hero__word[data-v] dan kuchliroq bo'lishi uchun)
+html.wk-loading .rise-in,
+html.wk-loading .hero__word,
+html.wk-loading .hero__dot-bar::after,
+html.wk-loading .phero__word,
+html.wk-loading .phero__img,
+html.wk-loading .phero__ghost {
+  animation-play-state: paused;
+}
+
+// v-spotlight (plugins/spotlight.js): sichqoncha ortidan yuradigan yorug'lik.
+// Rangi --spot bilan o'zgaradi (to'q fonda — oqroq)
+.has-spotlight {
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(340px circle at var(--mx, 50%) var(--my, 50%), var(--spot, rgb(var(--glow-rgb) / 0.18)), transparent 65%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+// Tizimda «harakatni kamaytirish» yoqilgan bo'lsa — hech qanday animatsiya yo'q
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Telefon: bo'lim yorlig'i sarlavha bilan birga o'rtada
+@include down($bp-md) {
+  .eyebrow {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

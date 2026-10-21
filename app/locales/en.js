@@ -1,0 +1,235 @@
+// English. Keys are the same as in ru.js.
+export default {
+  langLabel: 'English',
+  langShort: 'EN',
+  seoTitle: 'Hammersmith — steaks, beer and atmosphere in Tashkent',
+
+  eyebrow: {
+    why: 'Hammersmith',
+    about: 'About us',
+    studios: 'Locations',
+    menu: 'Menu',
+    form: 'Booking',
+  },
+
+  gallery: {
+    open: 'View photos',
+    close: 'Close',
+    back: 'All photos',
+    prev: 'Previous photo',
+    next: 'Next photo',
+    hint: 'Tap a photo to open it full size',
+  },
+
+  header: {
+    navLabel: 'Main menu',
+    cta: 'Book a table',
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
+    menu: 'Menu',
+    langLabel: 'Language',
+    toTop: 'Back to top',
+  },
+
+  nav: {
+    menu: 'Menu',
+    branches: 'Locations',
+    about: 'About',
+    contacts: 'Contacts',
+  },
+
+  hero: {
+    title: 'Steaks, beer',
+    titleAccent: 'and atmosphere',
+    text: 'Grilled steaks, draught beer and bar snacks at five Hammersmith restaurants in Tashkent. Open daily from 3 pm to 1 am.',
+    badge: 'Hammersmith · Steak & Beer',
+    cta: 'See the menu',
+    proofTitle: '5 restaurants in Tashkent',
+    proofText: 'Novza, Orda, Minor, Uzbum and Parkent — pick the nearest one and book a table.',
+    place: 'Tashkent · 5 locations · 15:00 – 01:00',
+  },
+
+  alt: {
+    hero: 'Steaks over an open fire',
+    heroGrill: 'Meat on the grill grate',
+    heroFire: 'Grill fire',
+    slide: 'Slide',
+  },
+
+  why: {
+    title: 'What people',
+    titleAccent: 'come for',
+    items: [
+      { title: 'Grilled steaks', text: 'Tomahawk, ribeye, T-bone, New York, Denver, machete and more — ten steak cuts on the menu.' },
+      { title: 'Beer and snacks', text: 'Filtered and unfiltered, dark and wheat beers, beer platters and smoked fish.' },
+      { title: 'Open till 1 am', text: 'Open every day from 3 pm to 1 am — for dinner, a night out with friends or a late evening.' },
+      { title: 'Five addresses', text: 'Novza, Orda, Minor, Uzbum and Parkent — in different parts of Tashkent.' },
+    ],
+  },
+
+  about: {
+    photos: ['Beer platter', 'Tomahawk steak', "Chef's grill platter"],
+    title: 'Steaks, beer',
+    titleAccent: 'and atmosphere',
+    paragraphs: [
+      'Hammersmith is a chain of restaurant-bars in Tashkent. Grilled meat is at the heart of the menu: beef steaks, pork ribs, «Meat Hunt» BBQ sets and grill platters for big groups.',
+      'Alongside the meat — draught and bottled beer, beer snacks, smoked fish, HS salads and cocktails. All five locations are open daily from 3 pm to 1 am.',
+    ],
+  },
+
+  trust: [
+    { value: '5', label: 'restaurants in Tashkent' },
+    { value: '10', label: 'steak cuts on the menu' },
+    { value: '20', label: 'beers on the list' },
+    { value: '15–01', label: 'open every day' },
+  ],
+
+  studios: {
+    title: 'Five restaurants',
+    titleAccent: 'in Tashkent',
+    text: 'One menu and one character at every location. Tap an address to open the map.',
+    photo: 'Photo',
+    hours: 'Daily',
+    call: 'Call',
+    route: 'Directions',
+    photoSoon: 'Photos coming soon',
+    branches: {
+      novza: { name: 'Novza', address: '21 Muqimiy St' },
+      orda: { name: 'Orda', address: '29 Shaykhontokhur St' },
+      minor: { name: 'Minor', address: '62 Amir Temur Ave' },
+      uzbum: { name: 'Uzbum', address: '44 Fargona Yuli St' },
+      parkent: { name: 'Parkent', address: '52 Sultonali Mashhadiy St' },
+    },
+  },
+
+  statement: 'Meat over an open fire, cold beer and a long evening with friends — Hammersmith is open every day until 1 am.',
+
+  featured: {
+    title: 'From our',
+    titleAccent: 'menu',
+    text: "Prices and availability come from the restaurant's current menu.",
+    all: 'Full menu',
+  },
+
+  menu: {
+    seo: 'Menu — Hammersmith',
+    seoText: 'Hammersmith restaurant menu: steaks, BBQ, beer snacks, salads, beer and cocktails with prices.',
+    eyebrow: 'Menu',
+    title: 'Menu',
+    accent: 'Hammersmith',
+    text: 'One menu at all five locations. Prices in UZS.',
+    groups: { grill: 'Grill & BBQ', kitchen: 'Kitchen', bar: 'Bar', drinks: 'Drinks', coffee: 'Coffee' },
+    search: 'Find a dish',
+    empty: 'Nothing found',
+    sum: 'UZS',
+    from: 'from',
+    minutes: 'min',
+    composition: 'Ingredients',
+    error: "The menu didn't load. Try refreshing the page or give us a call.",
+    retry: 'Refresh',
+    loading: 'Loading the menu…',
+    noPhoto: 'No photo',
+    categories: 'Menu sections',
+    adult: 'Alcoholic drinks are sold to persons over 18 only.',
+  },
+
+  cta: {
+    lead: 'Leave a request — our host will call you back to confirm the booking at your chosen location.',
+    title: 'Book',
+    titleAccent: 'a table',
+    button: 'Book a table',
+  },
+
+  form: {
+    title: 'Book',
+    titleAccent: 'a table',
+    text: "Leave your contacts, location and time — we'll call you back to confirm.",
+    name: 'Name',
+    phone: 'Phone',
+    studio: 'Location',
+    date: 'Date',
+    time: 'Time',
+    guests: 'Guests',
+    comment: 'Booking notes',
+    consentBefore: 'I agree to the',
+    consentLink: 'offer agreement',
+    consentMid: 'and the',
+    consentPolicy: 'processing of personal data',
+    consentAfter: '',
+    submit: 'Send request',
+    success: "Thank you! We'll call you shortly to confirm your booking.",
+    errors: {
+      name: 'Please enter your name',
+      phone: 'Please enter the full phone number',
+      studio: 'Please choose a location',
+      date: 'Please choose a date',
+      time: 'Please choose a time between 15:00 and 01:00',
+      consent: 'Consent to data processing is required',
+    },
+  },
+
+  pages: {
+    home: 'Home',
+    about: {
+      seo: 'About — Hammersmith',
+      eyebrow: 'About us',
+      title: 'Hammersmith',
+      accent: 'Steak & Beer',
+      text: 'Restaurant-bars in Tashkent: grilled steaks, beer and atmosphere — daily from 3 pm to 1 am.',
+      cta: 'Book a table',
+      valuesEyebrow: "What's on the menu",
+      valuesTitle: 'Three things',
+      valuesAccent: 'people come for',
+      values: [
+        { title: 'Steaks', text: 'Tomahawk, ribeye, porterhouse, T-bone, mignon, machete and more — on the grill.' },
+        { title: 'Beer', text: 'Draught and bottled: lager, unfiltered, dark, wheat and alcohol-free.' },
+        { title: 'Atmosphere', text: 'Evenings with friends, sharing platters for groups and a kitchen open till 1 am.' },
+      ],
+      menuEyebrow: 'Menu',
+      menuTitle: 'Grill, kitchen',
+      menuAccent: 'and bar',
+      menuText: 'Grill & BBQ, beer snacks, HS salads, soups, pasta, fish, desserts, bar and cocktails.',
+      menuLink: 'Open the menu',
+    },
+    contacts: {
+      seo: 'Contacts — Hammersmith',
+      eyebrow: 'Contacts',
+      title: 'Contacts',
+      accent: 'and locations',
+      text: 'Call us, message us on Instagram or just drop by — five restaurants in Tashkent, open daily from 3 pm to 1 am.',
+      call: 'Phone',
+      route: 'Open in maps',
+      map: 'Location map',
+      cta: 'Call us',
+      quick: [
+        { title: 'Call us', text: 'Table bookings and menu questions' },
+        { title: 'Instagram', text: 'News, offers and life at the restaurants' },
+        { title: 'Menu', text: 'Dishes and prices at every location' },
+      ],
+      branchesEyebrow: 'Locations',
+      branchesTitle: 'Come and',
+      branchesAccent: 'visit us',
+      marquee: ['Novza', 'Orda', 'Minor', 'Uzbum', 'Parkent'],
+    },
+  },
+
+  soon: {
+    text: 'This page is coming soon.',
+    home: 'Back to home',
+  },
+
+  footer: {
+    contactsTitle: 'Contacts',
+    salesLabel: 'Phone:',
+    city: 'Tashkent',
+    openMap: 'open in maps',
+    hours: 'Daily 15:00 – 01:00',
+    copyright: '© 2026 Hammersmith. All rights reserved.',
+    about: 'Restaurant-bars in Tashkent: steaks, beer and atmosphere.',
+    siteTitle: 'Site',
+    branchesTitle: 'Locations',
+    madeBy: 'Website by:',
+    offer: 'Offer agreement',
+    privacy: 'Privacy policy',
+  },
+}

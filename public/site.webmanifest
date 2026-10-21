@@ -1,0 +1,21 @@
+{
+  "name": "Hammersmith",
+  "short_name": "Hammersmith",
+  "description": "Steaks · Beer · Atmosphere",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F3EC",
+  "theme_color": "#120B0A",
+  "icons": [
+    {
+      "src": "/images/logo-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+// Faqat SCSS o'zgaruvchilari (CSS chiqishi yo'q) — har bir komponentga inject qilinadi.
+
+// Breakpointlar — BiletMax bilan bir xil
+$bp-xs: 480px;
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+// Header menyusi + til tanlagich + tugma bir qatorga sig'adigan eng kichik kenglik;
+// undan tor ekranda menyu burger ichiga o'tadi
+$bp-header-nav: 1150px;
+
+// Layout
+$container: 1200px;
+// Keng konteyner — header va bosh blok uchun (ekranning deyarli butun eni)
+$container-wide: 1680px;
+$gutter: 24px;
+
+// Z-index
+$z-header: 100;
+$z-drawer: 900;
